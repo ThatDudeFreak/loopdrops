@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looped Hype - LoopDrop Estimator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-section">
+        <div class="progress-container">
+            <div class="progress-wrapper">
+                <div class="progress-labels">
+                    <span class="phase-label start">Phase 3</span>
+                    <span class="phase-label end">Phase 4</span>
+                </div>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar" id="progressBar" style="width: 71%;"></div>
+                    <span class="progress-percentage" id="progressPercentage" style="left: 71%;">71%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-container">
+        <div class="infinity-shape shape-1">
+            <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50,50 C50,22.4 72.4,0 100,0 C127.6,0 150,22.4 150,50 C150,77.6 127.6,100 100,100 C72.4,100 50,77.6 50,50 C50,77.6 27.6,100 0,100 C-27.6,100 -50,77.6 -50,50 C-50,22.4 -27.6,0 0,0 C27.6,0 50,22.4 50,50 Z" 
+                      fill="url(#gradient1)" 
+                      transform="translate(100,50)"/>
+                <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="infinity-shape shape-2">
+            <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50,50 C50,22.4 72.4,0 100,0 C127.6,0 150,22.4 150,50 C150,77.6 127.6,100 100,100 C72.4,100 50,77.6 50,50 C50,77.6 27.6,100 0,100 C-27.6,100 -50,77.6 -50,50 C-50,22.4 -27.6,0 0,0 C27.6,0 50,22.4 50,50 Z" 
+                      fill="url(#gradient2)" 
+                      transform="translate(100,50)"/>
+                <defs>
+                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#14B8A6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="infinity-shape shape-3">
+            <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50,50 C50,22.4 72.4,0 100,0 C127.6,0 150,22.4 150,50 C150,77.6 127.6,100 100,100 C72.4,100 50,77.6 50,50 C50,77.6 27.6,100 0,100 C-27.6,100 -50,77.6 -50,50 C-50,22.4 -27.6,0 0,0 C27.6,0 50,22.4 50,50 Z" 
+                      fill="url(#gradient3)" 
+                      transform="translate(100,50)"/>
+                <defs>
+                    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="infinity-shape shape-4">
+            <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50,50 C50,22.4 72.4,0 100,0 C127.6,0 150,22.4 150,50 C150,77.6 127.6,100 100,100 C72.4,100 50,77.6 50,50 C50,77.6 27.6,100 0,100 C-27.6,100 -50,77.6 -50,50 C-50,22.4 -27.6,0 0,0 C27.6,0 50,22.4 50,50 Z" 
+                      fill="url(#gradient4)" 
+                      transform="translate(100,50)"/>
+                <defs>
+                    <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="infinity-shape shape-5">
+            <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50,50 C50,22.4 72.4,0 100,0 C127.6,0 150,22.4 150,50 C150,77.6 127.6,100 100,100 C72.4,100 50,77.6 50,50 C50,77.6 27.6,100 0,100 C-27.6,100 -50,77.6 -50,50 C-50,22.4 -27.6,0 0,0 C27.6,0 50,22.4 50,50 Z" 
+                      fill="url(#gradient5)" 
+                      transform="translate(100,50)"/>
+                <defs>
+                    <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="logo">Looped Hype</h1>
+                <p class="subtitle">LoopDrop Estimator</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Input Section -->
+    <section class="input-section">
+        <div class="container">
+            <div class="input-card glass">
+                <label class="input-label">Enter Your Wallet Address</label>
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        class="wallet-input" 
+                        placeholder="0x0000000000000000000000000000000000000000"
+                        id="walletAddress"
+                        maxlength="42"
+                    >
+                    <button class="calculate-btn" onclick="calculate()">
+                        Calculate Points
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results" id="results">
+        <div class="container">
+            <div class="protocol-table-container">
+                <table class="protocol-table glass">
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>HypurrFi</th>
+                            <th>Hyperlend</th>
+                            <th>Felix</th>
+                            <th>Kinetiq</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Phase 1 -->
+                        <tr>
+                            <td>
+                                <div class="phase-name">Phase 1</div>
+                                <div class="phase-date">Mar 3 - Mar 26</div>
+                            </td>
+                            <td>
+                                <div class="protocol-points" id="hypurrfiP1Points">0</div>
+                                <div class="protocol-percentage" id="hypurrfiP1Percent">0%</div>
+                            </td>
+                            <td>
+                                <div class="protocol-points" id="hyperlendP1Points">0</div>
+                                <div class="protocol-percentage" id="hyperlendP1Percent">0%</div>
+                            </td>
+                            <td rowspan="2" style="vertical-align: middle;" class="coming-soon-cell">Phase 3 Only</td>
+                            <td rowspan="2" style="vertical-align: middle;" class="coming-soon-cell">Phase 3 Only</td>
+                        </tr>
+                        
+                        <!-- Phase 2 -->
+                        <tr>
+                            <td>
+                                <div class="phase-name">Phase 2</div>
+                                <div class="phase-date">Mar 26 - Jun 10</div>
+                            </td>
+                            <td>
+                                <div class="protocol-points" id="hypurrfiP2Points">0</div>
+                                <div class="protocol-percentage" id="hypurrfiP2Percent">0%</div>
+                            </td>
+                            <td>
+                                <div class="protocol-points" id="hyperlendP2Points">0</div>
+                                <div class="protocol-percentage" id="hyperlendP2Percent">0%</div>
+                            </td>
+                            <!-- Felix and Kinetiq cells are merged with Phase 1 row -->
+                        </tr>
+                        
+                        <!-- Phase 3 -->
+                        <tr>
+                            <td>
+                                <div class="phase-name">Phase 3</div>
+                                <div class="phase-date">Jun 10 - Present</div>
+                            </td>
+                            <td>
+                                <div class="protocol-points" id="hypurrfiP3Points">0</div>
+                                <div class="protocol-percentage" id="hypurrfiP3Percent">0%</div>
+                            </td>
+                            <td>
+                                <div class="protocol-points" id="hyperlendP3Points">0</div>
+                                <div class="protocol-percentage" id="hyperlendP3Percent">0%</div>
+                            </td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                        </tr>
+                        
+                        <!-- Phase 4 -->
+                        <tr>
+                            <td>
+                                <div class="phase-name">Phase 4</div>
+                                <div class="phase-date">Coming Soon</div>
+                            </td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                        </tr>
+                        
+                        <!-- Phase 5 -->
+                        <tr>
+                            <td>
+                                <div class="phase-name">Phase 5</div>
+                                <div class="phase-date">Coming Soon</div>
+                            </td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                        </tr>
+                        
+                        <!-- Phase 6 -->
+                        <tr>
+                            <td>
+                                <div class="phase-name">Phase 6</div>
+                                <div class="phase-date">Coming Soon</div>
+                            </td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                            <td class="coming-soon-cell">Coming Soon</td>
+                        </tr>
+                        
+                        <!-- Total Row -->
+                        <tr class="total-row">
+                            <td>
+                                <div class="phase-name">Total Allocation</div>
+                            </td>
+                            <td>
+                                <div class="total-value" id="hypurrfiTotal">0</div>
+                            </td>
+                            <td>
+                                <div class="total-value" id="hyperlendTotal">0</div>
+                            </td>
+                            <td>
+                                <div class="total-value">-</div>
+                            </td>
+                            <td>
+                                <div class="total-value">-</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Social Card Button -->
+            <div class="social-section">
+                <button class="social-btn" onclick="generateSocialCard()">
+                    Generate Social Card
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading -->
+    <div class="loading-overlay" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Social Card Modal -->
+    <div class="modal-overlay" id="socialModal" onclick="closeSocialModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeSocialModal()">✕</button>
+            <canvas id="socialCanvas" class="social-canvas"></canvas>
+            <button class="download-btn" onclick="downloadSocialCard()">
+                Download Card
+            </button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
